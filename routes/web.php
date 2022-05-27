@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Livewire\ParamComponent;
+use App\Http\Livewire\Registration;
 use App\Http\Livewire\ShowPosts;
 use Illuminate\Support\Facades\Route;
 
@@ -19,3 +21,5 @@ Route::get('/', function () {
 });
 
 Route::get('/show-posts',ShowPosts::class);
+Route::get('/registration',Registration::class);
+Route::get('/param-component/{param}',ParamComponent::class);
