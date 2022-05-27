@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Livewire\Actions;
 use App\Http\Livewire\Comments;
 use App\Http\Livewire\ParamComponent;
 use App\Http\Livewire\Registration;
@@ -24,4 +25,5 @@ Route::get('/', function () {
 Route::get('/show-posts',ShowPosts::class);
 Route::get('/registration',Registration::class);
 Route::get('/comments',Comments::class);
+Route::get('/actions',Actions::class);
 Route::get('/param-component/{param}',ParamComponent::class);
